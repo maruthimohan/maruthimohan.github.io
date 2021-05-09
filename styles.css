@@ -1,0 +1,30 @@
+body {
+    /* font-family: 'Libre Baskerville', serif; */
+    font-family: 'Roboto Mono', monospace;
+    margin: 0px 20%;
+}
+
+.header {
+    margin: 5px;
+}
+
+.header-heading {
+    margin: 5px;
+    float: left;
+    line-height: 43px;
+    font-size: 43px;
+}
+
+.header-blog {
+    float:      right;
+    padding:    10px;
+    border:     1px solid black;
+    margin: 5px;
+}
+
+.header-work {
+    float:  right;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 5px;
+}
