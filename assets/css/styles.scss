@@ -8,6 +8,7 @@ body {
     // font-family: 'Roboto Mono', monospace;
     // font-family: 'Dosis', sans-serif;
     margin: 0px 20%;
+    background-color: #ffc398;
 }
 
 .header {
@@ -28,13 +29,13 @@ body {
         float: left;
         line-height: 22px;
         font-size: 30px;
-        background: black;
+        background: #672c02;
         color: white;
         padding: 10px;
 
         &:hover {
             background: white;
-            color: black;
+            color: #672c02;
         }
     }
 
@@ -42,11 +43,11 @@ body {
         cursor: pointer;
         float: right;
         padding: 10px;
-        border: 1px solid black;
+        border: 1px solid #672c02;
         margin: 5px;
 
         &:hover {
-            background: black;
+            background: #672c02;
             color: white;
         }
     }
