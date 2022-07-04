@@ -2,5 +2,12 @@
 layout: default
 ---
 <div class="post-content">
+    <h1>{{ page.title }}</h1>
+    <p>{{page.date | date_to_string}}</p>
+    {%- assign author = site.authors | where: 'short_name', page.author | first -%}
+    
+    {% if author %}
+        - <a href="{{ author.url }}">{{ author.name }}</a>
+    {% endif %}
     {{content}}
 </div>

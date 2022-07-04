@@ -3,12 +3,16 @@
 ---
 @import "main";
 
+$primary-color: #0072fd;
+$secondary-color: white;
+
 body {
-    font-family: 'Libre Baskerville', serif;
-    // font-family: 'Roboto Mono', monospace;
+    // font-family: 'Fira Sans', sans-serif;
+    // font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto Mono', monospace;
     // font-family: 'Dosis', sans-serif;
     margin: 0px 20%;
-    background-color: #ffc398;
+    background-color: #ffffff;
 }
 
 .header {
@@ -16,6 +20,7 @@ body {
     margin-bottom: 100px;
     margin-left: 5px;
     margin-right: 5px;
+    // font-family: 'Libre Baskerville', serif;
 
     &::after {
         content: "";
@@ -23,19 +28,18 @@ body {
         display: table;
     }
 
-    .header-heading {
+    .header-title {
         cursor: pointer;
         margin: 5px;
         float: left;
         line-height: 22px;
-        font-size: 30px;
-        background: #672c02;
-        color: white;
+        border: 1px solid $primary-color;
+        color: $primary-color;
         padding: 10px;
 
         &:hover {
-            background: white;
-            color: #672c02;
+            background: $primary-color;
+            color: $secondary-color;
         }
     }
 
@@ -43,12 +47,13 @@ body {
         cursor: pointer;
         float: right;
         padding: 10px;
-        border: 1px solid #672c02;
+        border: 1px solid $primary-color;
+        color: $primary-color;
         margin: 5px;
 
-        &:hover {
-            background: #672c02;
-            color: white;
+        &:hover, &.active {
+            background: $primary-color;
+            color: $secondary-color;
         }
     }
 }
@@ -62,6 +67,31 @@ body {
 
     .information {
         line-height: 26px;
+    }
+}
+
+.about {
+    ul {
+        list-style-type: none;
+
+        li {
+            line-height: 26px;
+        }
+
+        ul {
+            margin-bottom: 50px;
+        }
+    }
+
+    .title {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .ask-me-about,
+    .reach-me,
+    .fun-fact {
+        margin: 20px 5px;
     }
 }
 
