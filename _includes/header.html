@@ -1,27 +1,13 @@
 <div class="header">
     <div class="header-title" onclick="navigateToURL('/')">Maruthi Mohan</div>
 
-    <div 
-        {% if page.url == "/about/" %} 
-            class="header-menu-item active" 
-            {% else %}
-                class="header-menu-item"
-        {% endif %} 
-        onclick="navigateToURL('/about')">About</div>
-    
-    <div 
-        {% if page.url == "/work/" %} 
-            class="header-menu-item active" 
-            {% else %}
-                class="header-menu-item"
-        {% endif %} 
-        onclick="navigateToURL('/work')">Work</div>
-    
-    <div 
-        {% if page.url == "/blog/" %} 
-            class="header-menu-item active" 
-            {% else %}
-                class="header-menu-item"
-        {% endif %} 
-        onclick="navigateToURL('/blog')">Blog</div>
+    {%- for navItem in site.data.navigation -%}
+        <div 
+            {% if page.url == navItem.link %} 
+                class="header-menu-item active" 
+                {% else %}
+                    class="header-menu-item"
+            {% endif %} 
+            onclick="navigateToURL('{{ navItem.link }}')">{{ navItem.name }}</div>
+    {%- endfor -%}
 </div>
