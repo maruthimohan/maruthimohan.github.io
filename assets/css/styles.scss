@@ -5,13 +5,18 @@
 
 $primary-color: #0072fd;
 $secondary-color: white;
+$golden-yellow: #580000;
+$light-violet: #ae4ec1;
+
+// Fonts
+$inconsolata-font: 'Inconsolata', monospace;
+$inter-font: 'Inter', sans-serif;
+$roboto: 'Roboto Mono', monospace;
+$fira-sans: 'Fira Sans', sans-serif;
 
 body {
-    // font-family: 'Fira Sans', sans-serif;
-    // font-family: 'Libre Baskerville', serif;
-    font-family: 'Roboto Mono', monospace;
-    // font-family: 'Dosis', sans-serif;
-    margin: 0px 20%;
+    font-family: $inter-font;
+    margin: 5px 15%;
     background-color: #ffffff;
 }
 
@@ -20,7 +25,7 @@ body {
     margin-bottom: 100px;
     margin-left: 5px;
     margin-right: 5px;
-    // font-family: 'Libre Baskerville', serif;
+    font-size: 22px;
 
     &::after {
         content: "";
@@ -33,13 +38,20 @@ body {
         margin: 5px;
         float: left;
         line-height: 22px;
-        border: 1px solid $primary-color;
+        // border: 1px solid $primary-color;
         color: $primary-color;
         padding: 10px;
+        text-decoration: underline;
+        text-decoration-thickness: 5px;
+        transition: all 0.3s ease-out;
 
         &:hover {
-            background: $primary-color;
-            color: $secondary-color;
+            color: $light-violet;
+            transform: translateX(-10px);
+        }
+
+        &.active {
+            color: $light-violet;
         }
     }
 
@@ -47,13 +59,20 @@ body {
         cursor: pointer;
         float: right;
         padding: 10px;
-        border: 1px solid $primary-color;
+        // border: 1px solid $primary-color;
         color: $primary-color;
         margin: 5px;
+        text-decoration: underline;
+        text-decoration-thickness: 5px;
+        transition: all 0.3s ease-out;
 
-        &:hover, &.active {
-            background: $primary-color;
-            color: $secondary-color;
+        &:hover {
+            transform: translateX(10px);
+            color: $light-violet;
+        }
+
+        &.active {
+            color: $light-violet;
         }
     }
 }
@@ -100,6 +119,7 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 50px;
+    font-size: 18px;
 }
 
 .post-content {

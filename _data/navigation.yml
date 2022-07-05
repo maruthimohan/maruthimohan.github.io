@@ -1,2 +1,10 @@
 - name: Staff
   link: /staff.html
+- name: Blog
+  link: /blog/
+- name: Work
+  link: /work/
+- name: About
+  link: /about/
+- name: Home
+  link: /
