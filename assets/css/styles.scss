@@ -41,20 +41,19 @@ body {
         margin: 5px;
         float: left;
         line-height: 22px;
-        // border: 1px solid $primary-color;
         color: $primary-color;
         padding: 10px;
-        text-decoration: underline;
-        text-decoration-thickness: 5px;
         transition: all 0.3s ease-out;
 
         &:hover {
             color: $light-violet;
+            font-size: 20.5px;
             transform: translateX(-10px);
         }
 
         &.active {
             color: $light-violet;
+            font-size: 22px;
         }
     }
 
@@ -62,20 +61,21 @@ body {
         cursor: pointer;
         float: right;
         padding: 10px;
-        // border: 1px solid $primary-color;
         color: $primary-color;
         margin: 5px;
-        text-decoration: underline;
-        text-decoration-thickness: 5px;
         transition: all 0.3s ease-out;
 
         &:hover {
-            transform: translateX(10px);
             color: $light-violet;
+            transform: translateX(-10px);
+            // text-decoration: underline;
+            // text-decoration-thickness: 5px;
         }
 
         &.active {
             color: $light-violet;
+            text-decoration: underline;
+            text-decoration-thickness: 5px;
         }
     }
 }
@@ -119,6 +119,7 @@ body {
 
 .footer {
     margin: 15px 10px;
+    line-height: 25px;
 }
 
 .content {
