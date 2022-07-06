@@ -3,7 +3,7 @@ layout: post
 title: My first blog with Netlify CMS
 date: 2022-07-06T05:10:51.818Z
 categories:
-  - NetlifyCMS
+  - Netlify CMS
 tags:
   - Netlify
   - GitHub
