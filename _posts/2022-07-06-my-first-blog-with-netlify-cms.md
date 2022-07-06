@@ -7,5 +7,6 @@ categories:
 tags:
   - Netlify
   - GitHub
+author: Maruthi
 ---
 It has been a great experience working with Netlify CMS and with a little "hack-around", I was able to set up the authentication to use GitHub repository as the backend.
